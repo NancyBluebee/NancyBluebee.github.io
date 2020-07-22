@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RWD履歷表登入頁面</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
+    <script type="text/javascript" src="./js/login.js"></script>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <section id="content">
+            <p id="image_logo"><img src="./imgs/lucky7.png" width="100" height="100"></p>
+            <form method="post" action="./js/login.js">
+                <div class="drop-shadow ">
+                <h1>帳密Login功能</h1>
+                </div>
+			<div>
+				<input type="text" placeholder="Username" required="" id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" id="password" />
+			</div>
+                    <div id="login_control">
+                        <input type="button" id="btn_login" value="登入" onclick="login();" />
+                        <a id="forget_pwd" href="forget_pwd.html">忘記密碼？</a>
+                    </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
